@@ -17,6 +17,8 @@ import java.net.URL;
 /**
  * Created by ScienceHistory on 16/4/9.
  * 网络访问工具类
+ * 开启了一个线程来发起 HTTP 请求,那么服务器响应的数据没有回调接口是无法进行返回的,
+ * 所有的耗时逻辑都是在子线程里进行的,sendHttpRequest()方法会在服务器还来得及响应的时候就执行结束了,当然也就无法返回响应的数据了
  */
 
 public class HttpUtil {
