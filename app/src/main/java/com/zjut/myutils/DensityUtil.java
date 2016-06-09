@@ -13,9 +13,9 @@ import android.content.Context;
 
 public class DensityUtil {
     /**
-     * 根据手机的分辨率从dip的单位转换成为像素px
+     * 根据手机的分辨率从dp的单位转换成为像素px
      */
-    public static int dip2px(Context context,float dpValue) {
+    public static int dp2px(Context context,float dpValue) {
         try {
             final float scale = context.getResources().getDisplayMetrics().density;
             return (int) (dpValue*scale+0.5f); //强制类型转换是直接舍去小数位，此处加上0.5是为了进行四舍五入
@@ -26,9 +26,9 @@ public class DensityUtil {
     }
 
     /**
-     * 根据手机的分辨率从像素px转换为单位dip
+     * 根据手机的分辨率从像素px转换为单位dp
      */
-    public static int px2dip(Context context,float pxValue) {
+    public static int px2dp(Context context,float pxValue) {
         try {
             final float scale = context.getResources().getDisplayMetrics().density;
             return (int) (pxValue/scale+0.5f); //强制类型转换是直接舍去小数位，此处加上0.5是为了进行四舍五入
@@ -36,6 +36,25 @@ public class DensityUtil {
             e.printStackTrace();
         }
         return (int) pxValue;
+    }
+
+    /**
+     * 根据手机的分辨率从像素px转换为单位sp
+     */
+    public static int px2sp(Context context, float pxValue) {
+        final float fontScale = context.getResources()
+                .getDisplayMetrics().scaledDensity;
+        return (int) (pxValue / fontScale + 0.5f);
+    }
+
+    /**
+     * 根据手机的分辨率从像素sp转换为单位px
+     */
+    public static int sp2px(Context context, float spValue) {
+
+        final float fontScale = context.getResources()
+                .getDisplayMetrics().scaledDensity;
+        return (int) (spValue * fontScale + 0.5f);
     }
 }
 
