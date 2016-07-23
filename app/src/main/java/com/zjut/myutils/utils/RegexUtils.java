@@ -1,4 +1,4 @@
-package com.zjut.myutils;
+package com.zjut.myutils.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

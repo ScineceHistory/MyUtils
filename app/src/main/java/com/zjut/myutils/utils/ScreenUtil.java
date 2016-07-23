@@ -1,4 +1,4 @@
-package com.zjut.myutils;
+package com.zjut.myutils.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

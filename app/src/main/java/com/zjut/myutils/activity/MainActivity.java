@@ -1,74 +1,40 @@
 package com.zjut.myutils.activity;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.gson.reflect.TypeToken;
-import com.zjut.myutils.DateUtil;
-import com.zjut.myutils.JsonHelper;
 import com.zjut.myutils.R;
-import com.zjut.myutils.bean.Bean;
-
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
+import com.zjut.myutils.imagethreelevelcache.MyBitmapUtils;
 
 public class MainActivity extends AppCompatActivity {
+
     private long exitTime = 0;
+    private ImageView mImageViewCache;
+    private Button mButtonPic;
+    private static String PIC_URL = "http://ww3.sinaimg.cn/large/7a8aed7bjw1ezplg7s8mdj20xc0m8jwf.jpg";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //gsonUse();
+        mImageViewCache = (ImageView) findViewById(R.id.iv_cache);
+        mButtonPic = (Button) findViewById(R.id.btn_pic);
 
-
-        dateFormatUse();
+        mButtonPic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyBitmapUtils myBitmapUtils = new MyBitmapUtils();
+                myBitmapUtils.display(mImageViewCache,PIC_URL);
+            }
+        });
     }
-
-    private void dateFormatUse() {
-        String dataStr = DateUtil.getInstance().getDataString_1(null);
-        String toStringData = DateUtil.getInstance().stringDateToStringData("yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd", dataStr);
-        String date = DateUtil.getInstance().getDayByDate(
-                Calendar.getInstance(), Calendar.DATE, 1);
-        String week = DateUtil.getInstance().getDayByDate(
-                Calendar.getInstance(), Calendar.WEEK_OF_YEAR, 1);
-        String month = DateUtil.getInstance().getDayByDate(
-                Calendar.getInstance(), Calendar.MONTH, 1);
-        String year = DateUtil.getInstance().getDayByDate(
-                Calendar.getInstance(), Calendar.YEAR, 1);
-        int lastDay = DateUtil.getInstance().getMonthLastDay(2015, 2);
-        System.out.println(dataStr);
-        System.out.println(toStringData);
-        System.out.println(date);
-        System.out.println(week);
-        System.out.println(month);
-        System.out.println(year);
-        System.out.println("2月有"+lastDay+"天");
-    }
-
-    private void gsonUse() {
-        Bean bean = new Bean();
-        bean.age="30";
-        bean.name="name";
-        String result = JsonHelper.getInstance().createJsonString(bean);
-        System.out.println(result);
-        Bean bean2 = JsonHelper.getInstance().getObject(result, Bean.class);
-        System.out.println(bean2.toString());
-
-
-        ArrayList<Bean> list = new ArrayList<Bean>();
-        list.add(bean);
-        list.add(bean2);
-        result = JsonHelper.getInstance().createJsonString(list);
-        System.out.println(result);
-        List<ArrayList<Bean>> list2 = JsonHelper.getInstance().getList(result, new TypeToken<ArrayList<Bean>>(){});
-        System.out.println(list2.toString());
-    }
-
 
     /**
      * Android中的“再按一次返回键退出程序“的代码

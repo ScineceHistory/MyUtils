@@ -1,4 +1,4 @@
-package com.zjut.myutils;
+package com.zjut.myutils.utils;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

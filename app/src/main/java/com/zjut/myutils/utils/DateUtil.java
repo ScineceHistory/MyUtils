@@ -1,4 +1,4 @@
-package com.zjut.myutils;
+package com.zjut.myutils.utils;
 
 import android.annotation.SuppressLint;
 import android.text.TextUtils;
