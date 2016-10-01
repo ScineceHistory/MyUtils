@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import android.app.Activity;
 import android.app.ActivityManager;

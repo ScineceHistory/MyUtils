@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -19,7 +19,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.blankj.utilcode.utils.ConstUtils.*;
+import static com.zjut.myutils.others.ConstUtils.KB;
+
 
 /**
  * <pre>

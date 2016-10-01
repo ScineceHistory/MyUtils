@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,7 +12,8 @@ import java.security.SecureRandom;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-import static com.blankj.utilcode.utils.ConvertUtils.*;
+import static com.zjut.myutils.others.ConvertUtils.bytes2HexString;
+import static com.zjut.myutils.others.ConvertUtils.hexString2Bytes;
 
 /**
  * <pre>

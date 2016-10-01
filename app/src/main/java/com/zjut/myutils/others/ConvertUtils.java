@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -18,10 +18,10 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 
-import static com.blankj.utilcode.utils.ConstUtils.BYTE;
-import static com.blankj.utilcode.utils.ConstUtils.GB;
-import static com.blankj.utilcode.utils.ConstUtils.KB;
-import static com.blankj.utilcode.utils.ConstUtils.MB;
+import static com.zjut.myutils.others.ConstUtils.BYTE;
+import static com.zjut.myutils.others.ConstUtils.GB;
+import static com.zjut.myutils.others.ConstUtils.KB;
+import static com.zjut.myutils.others.ConstUtils.MB;
 
 /**
  * <pre>

@@ -1,11 +1,17 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
+
+import com.zjut.myutils.others.ConstUtils.TimeUnit;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static com.blankj.utilcode.utils.ConstUtils.*;
+import static com.zjut.myutils.others.ConstUtils.DAY;
+import static com.zjut.myutils.others.ConstUtils.HOUR;
+import static com.zjut.myutils.others.ConstUtils.MIN;
+import static com.zjut.myutils.others.ConstUtils.MSEC;
+import static com.zjut.myutils.others.ConstUtils.SEC;
 
 
 /**

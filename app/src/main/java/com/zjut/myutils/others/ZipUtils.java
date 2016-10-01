@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -16,7 +16,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
-import static com.blankj.utilcode.utils.ConstUtils.KB;
+import static com.zjut.myutils.others.ConstUtils.KB;
 
 /**
  * <pre>

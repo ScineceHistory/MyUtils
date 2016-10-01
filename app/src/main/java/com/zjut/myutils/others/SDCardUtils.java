@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import android.annotation.TargetApi;
 import android.os.Build;

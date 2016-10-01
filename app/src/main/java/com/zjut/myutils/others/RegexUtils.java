@@ -1,8 +1,18 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import java.util.regex.Pattern;
 
-import static com.blankj.utilcode.utils.ConstUtils.*;
+import static com.zjut.myutils.others.ConstUtils.REGEX_CHZ;
+import static com.zjut.myutils.others.ConstUtils.REGEX_DATE;
+import static com.zjut.myutils.others.ConstUtils.REGEX_EMAIL;
+import static com.zjut.myutils.others.ConstUtils.REGEX_IDCARD15;
+import static com.zjut.myutils.others.ConstUtils.REGEX_IDCARD18;
+import static com.zjut.myutils.others.ConstUtils.REGEX_IP;
+import static com.zjut.myutils.others.ConstUtils.REGEX_MOBILE_EXACT;
+import static com.zjut.myutils.others.ConstUtils.REGEX_MOBILE_SIMPLE;
+import static com.zjut.myutils.others.ConstUtils.REGEX_TEL;
+import static com.zjut.myutils.others.ConstUtils.REGEX_URL;
+import static com.zjut.myutils.others.ConstUtils.REGEX_USERNAME;
 
 /**
  * <pre>

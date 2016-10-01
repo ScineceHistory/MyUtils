@@ -1,11 +1,10 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import android.content.Context;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.provider.Settings;
-import android.telephony.TelephonyManager;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

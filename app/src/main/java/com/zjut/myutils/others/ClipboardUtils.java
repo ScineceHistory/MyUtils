@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

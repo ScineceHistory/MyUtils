@@ -1,12 +1,9 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
-import android.content.pm.ResolveInfo;
-import android.os.Bundle;
 
 import java.util.List;
 

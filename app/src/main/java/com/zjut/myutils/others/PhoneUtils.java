@@ -1,4 +1,4 @@
-package com.blankj.utilcode.utils;
+package com.zjut.myutils.others;
 
 import android.app.PendingIntent;
 import android.content.ContentResolver;
@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.SystemClock;
-import android.provider.Settings;
 import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
